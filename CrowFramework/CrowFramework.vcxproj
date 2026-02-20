@@ -42,7 +42,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -171,12 +171,17 @@
     <ClCompile Include="..\dependences\imgui-docking\imgui\imgui_widgets.cpp" />
     <ClCompile Include="..\dependences\stb_image\src\stb_image.cpp" />
     <ClCompile Include="..\dependences\stb_truetype\src\stb_truetype.cpp" />
+    <ClCompile Include="src\engine\App.cpp" />
+    <ClCompile Include="src\game\VNGame.cpp" />
     <ClCompile Include="src\engine\graphics\Shader.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\engine\debug\openglErrorReporting.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\engine\App.h" />
+    <ClInclude Include="include\engine\Game.h" />
     <ClInclude Include="include\engine\graphics\Shader.h" />
+    <ClInclude Include="include\game\VNGame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
